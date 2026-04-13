@@ -103,7 +103,7 @@ Set up Graylog, Elasticsearch, and MongoDB using Docker:
 
 Configure inputs, streams, and basic processing:
 
-./setup/graylog-configuration.md
+[Graylog-Configuration](./setup/graylog-configuration.md)
 
 ---
 
@@ -111,7 +111,7 @@ Configure inputs, streams, and basic processing:
 
 Simulate log generation using PowerShell scripts:
 
-./data-ingestion/log-simulation.md
+[Data-Ingestion](./data-ingestion/log-simulation.md)
 
 ---
 
@@ -119,7 +119,7 @@ Simulate log generation using PowerShell scripts:
 
 Extract relevant fields such as IP addresses, usernames, and event types:
 
-./parsing/field-extraction.md
+[Parsed Logs](./parsing/field-extraction.md)
 
 ---
 
@@ -134,7 +134,7 @@ Detection logic is implemented for the following scenarios:
 
 Detection rule definitions:
 
-./detection-rules/
+[Detection Rules](./detection-rules/)
 
 ---
 
@@ -142,7 +142,7 @@ Detection rule definitions:
 
 Define alert conditions and notification channels:
 
-./alerts/notifications.md
+[Alerts](./alerts/notifications.md)
 
 ---
 
@@ -150,7 +150,7 @@ Define alert conditions and notification channels:
 
 Create dashboards to monitor security events in near real-time:
 
-./dashboards/soc-dashboard.md
+[Dahboards](./dashboards/soc-dashboard.md)
 
 ---
 
