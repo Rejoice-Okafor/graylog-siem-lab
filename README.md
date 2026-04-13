@@ -95,7 +95,7 @@ cd graylog-siem-lab
 
 Set up Graylog, Elasticsearch, and MongoDB using Docker:
 
-[Docker Setup Guide]./setup/docker-setup.md
+[Docker Setup Guide](./setup/docker-setup.md)
 
 ---
 
