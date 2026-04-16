@@ -47,14 +47,14 @@ Graylog requires the root password to be stored as a SHA-256 hash instead of pla
 ```bash
 echo -n "Password123" | sha256sum
 ```
-Option 2: PowerShell (Windows)
+## Option 2: PowerShell (Windows)
 ```bash
 "Password123" | Out-File -Encoding ascii temp.txt
 Get-FileHash temp.txt -Algorithm SHA256
 ```
 
 
-Example Output
+## Example Output
 ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f
 
 ## Docker Compose Configuration
@@ -112,7 +112,9 @@ Password: Password123
 
 ## Status
 Docker environment configured
+
 Graylog stack deployed
+
 Ready for log ingestion
 
 ---
