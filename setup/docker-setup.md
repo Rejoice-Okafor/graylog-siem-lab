@@ -102,6 +102,7 @@ http://localhost:9000
 
 ## Default Credentials
 Username: admin
+
 Password: Password123
 
 ## Security Considerations
@@ -111,10 +112,8 @@ Password: Password123
 4. This setup is intended for lab and educational purposes only
 
 ## Status
-Docker environment configured
-
-Graylog stack deployed
-
-Ready for log ingestion
+1. Docker environment configured
+2. Graylog stack deployed
+3. Ready for log ingestion
 
 ---
