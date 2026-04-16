@@ -46,16 +46,19 @@ Graylog requires the root password to be stored as a SHA-256 hash instead of pla
 
 ```bash
 echo -n "Password123" | sha256sum
+```
 Option 2: PowerShell (Windows)
+```bash
 "Password123" | Out-File -Encoding ascii temp.txt
 Get-FileHash temp.txt -Algorithm SHA256
-Option 3: Online Generator (Testing Only)
+```
 
-Use only in non-production environments.
 
 Example Output
 ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f
-Docker Compose Configuration
+
+## Docker Compose Configuration
+```bash
 version: '3'
 
 services:
@@ -86,21 +89,28 @@ services:
       - "1514:1514/udp"
       - "12201:12201/udp"
     restart: always
-Starting the Environment
+```
+## Starting the Environment
+
+```bash
 docker-compose up -d
-Accessing Graylog
-
+```
+## Accessing Graylog
+```bash
 http://localhost:9000
+```
 
-Default Credentials
+## Default Credentials
 Username: admin
 Password: Password123
-Security Considerations
-Always store passwords as SHA-256 hashes
-Avoid exposing secrets in configuration files
-Use environment variables or secret managers in production
-This setup is intended for lab and educational purposes only
-Status
+
+## Security Considerations
+1. Always store passwords as SHA-256 hashes
+2. Avoid exposing secrets in configuration files
+3. Use environment variables or secret managers in production
+4. This setup is intended for lab and educational purposes only
+
+## Status
 Docker environment configured
 Graylog stack deployed
 Ready for log ingestion
