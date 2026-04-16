@@ -99,5 +99,7 @@ Result
 After sending logs:
 
 Logs appear in Search
+
 Logs are routed into Streams
+
 Logs can be used for Events and Alerts
